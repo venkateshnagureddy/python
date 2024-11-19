@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetri Technology Solutions</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ecf0f1;
+        }
+
+        /* Sticky Navbar */
+        .header {
+            position: -webkit-sticky;
+            /* For Safari support */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Ensures the navbar stays above other elements */
+            background-color: #fff;
+            /* White background for the navbar */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Adds subtle shadow for effect */
+            width: 100%;
+            /* Ensure it takes full width */
+            margin: 0;
+            /* Remove any margin */
+        }
+
+        /* Optional: Styling for the logo and navigation */
+        .logo img {
+            height: 35px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-right: 150px;
+            /* Adjust as per your design */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: navy;
+            /* Navbar text color */
+            font-weight: bold;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a:hover {
+            color: #f39c12;
+            /* Highlight color on hover */
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            z-index: 1;
+            width: 220px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: navy;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: navy;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .stages {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px 20px;
+        }
+
+        .stage {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .stage:hover {
+            transform: translateY(-10px);
+        }
+
+        .stage-icon {
+            font-size: 40px;
+            color: #f39c12;
+        }
+
+        .stage h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: navy;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+<div class="header">
+    <!-- Logo Image -->
+    <div class="logo">
+        <img src="image/logo.png" alt="Vetri Technology Solutions Logo">
+    </div>
+    <div class="nav-links">
+        <a href="#" class="nav-link"><i class="fas fa-cogs"></i> VTS PROCESS</a>
+
+        <!-- Dropdown Menu for OUR TRAININGS -->
+        <div class="dropdown">
+            <a href="#" class="nav-link"><i class="fas fa-graduation-cap"></i> OUR TRAININGS &#9662;</a>
+            <div class="dropdown-content">
+                <a href="course.html" class="dropdown-item"><i class="fas fa-code"></i> Python Full Stack</a>
+                <a href="#" class="dropdown-item"><i class="fas fa-coffee"></i> Java Full Stack</a>
+                <a href="#" class="dropdown-item"><i class="fas fa-mobile-alt"></i> Mobile App Development</a>
+                <a href="#" class="dropdown-item"><i class="fas fa-chart-line"></i> Data Analytics</a>
+                <a href="#" class="dropdown-item"><i class="fas fa-database"></i> Data Science</a>
+            </div>
+        </div>
+
+        <a href="#" class="nav-link"><i class="fas fa-briefcase"></i> CAREERS</a>
+    </div>
+</div>
+
+    
+
+</body>
+
+</html>
